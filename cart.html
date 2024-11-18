@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MalukForever || Home</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Navbar Brand/Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/maluk-logo.png" width="80px" alt="">
+                </a>
+
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links and My Account icon -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="category.html" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#skin-care">Skin Care</a></li>
+                                <li><a class="dropdown-item" href="#personal-care">Personal Care</a></li>
+                                <li><a class="dropdown-item" href="#hair-accessories">Hair Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i> Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="trackingpage.html">Package Track </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- 
+        <section class="breadcrumb-banner">
+            <div class="breadcrumb-content">
+                <h1>Cart</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li> / </li>
+                        <li>Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </section> -->
+
+
+        <section>
+            <div class="cart-wrapper space-top space-extra-bottom">
+                <div class="container">
+                    <form action="#" class="woocommerce-cart-form">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th class="cart-col-image">Image</th>
+                                    <th class="cart-col-productname">Product Name</th>
+                                    <th class="cart-col-price">Price</th>
+                                    <th class="cart-col-quantity">Quantity</th>
+                                    <th class="cart-col-total">Total</th>
+                                    <th class="cart-col-remove">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Cart Item -->
+                                <tr class="cart-item">
+                                    <td>
+                                        <a class="cart-productimage" href="#">
+                                            <img src="assets/images/products/image3.jpg" alt="Image">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a class="cart-productname" href="#">Shower Oil</a>
+                                    </td>
+                                    <td class="price" data-price="999.99">
+                                        <span class="amount">₹ 999.99</span>
+                                    </td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="quantity-minus qty-btn">-</button>
+                                            <input type="number" class="qty-input" value="1" min="1" max="99">
+                                            <button class="quantity-plus qty-btn">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="total">
+                                        <span class="amount">₹ 999.99</span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="remove"><i class="fas fa-trash-alt"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart-actions">
+                            <input type="text" class="form-control" placeholder="Coupon Code...">
+                            <button type="submit" class="btn my-1">Apply Coupon</button>
+                            <button type="submit" class="btn my-1">Update Cart</button>
+                            <a href="shop.html" class="btn">Continue Shopping</a>
+                        </div>
+                    </form>
+                    <div class="cart-totals">
+                        <h2>Cart Totals</h2>
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td id="cart-subtotal">₹ 999.99</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td id="cart-total"><strong>₹ 999.99</strong></td>
+                            </tr>
+                        </table>
+                        <div class="text-end">
+
+                            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            /* Cart Section Styling */
+            .cart-wrapper {
+                padding: 20px 15px;
+                background-color: #f9f9f9;
+                font-family: Arial, sans-serif;
+            }
+
+            .cart-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+
+            .cart-table th,
+            .cart-table td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .cart-table th {
+                background-color: #f7f7f7;
+                font-weight: bold;
+                color: #333;
+                text-transform: uppercase;
+            }
+
+            .cart-table td img {
+                max-width: 70px;
+                border-radius: 5px;
+            }
+
+            .cart-productname {
+                color: #b09614;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .cart-productname:hover {
+                text-decoration: underline;
+            }
+
+            .quantity {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .qty-btn {
+                background-color: #e0e0e0;
+                border: 1px solid #ccc;
+                padding: 5px 10px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                color: #333;
+                transition: background-color 0.3s ease;
+            }
+
+            .qty-btn:hover {
+                background-color: #b09614;
+                color: #fff;
+            }
+
+            .qty-input {
+                width: 50px;
+                text-align: center;
+                margin: 0 5px;
+                border: 1px solid #ddd;
+                padding: 5px;
+                border-radius: 4px;
+            }
+
+            .amount {
+                font-size: 16px;
+                font-weight: bold;
+                color: #b09614;
+            }
+
+            .remove {
+                color: #e74c3c;
+                font-size: 18px;
+                transition: color 0.3s ease;
+            }
+
+            .remove:hover {
+                color: #c0392b;
+            }
+
+            .cart-actions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+                flex-wrap: wrap;
+            }
+
+            .cart-actions .form-control {
+                width: 30%;
+                margin-right: 10px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                outline: none;
+            }
+
+            .cart-actions .btn {
+                padding: 10px 20px;
+                background-color: #b09614;
+                color: #fff;
+                text-decoration: none;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+            .cart-actions .btn:hover {
+                background-color: #b09614;
+            }
+
+            .cart-totals {
+                margin-top: 30px;
+                background-color: #fff;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+
+            .cart-totals h2 {
+                margin-bottom: 15px;
+                font-size: 20px;
+                color: #333;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+            }
+
+            .cart-totals table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+                font-size: 16px;
+            }
+
+            .cart-totals td {
+                padding: 10px;
+                border: 1px solid #ddd;
+                text-align: left;
+                color: #333;
+            }
+
+            .cart-totals td:last-child {
+                text-align: right;
+            }
+
+            .cart-totals strong {
+                font-size: 18px;
+                color: #b09614;
+            }
+
+            .cart-totals .btn {
+                margin-top: 15px;
+                background-color: #b09614;
+                color: #fff;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+            .cart-totals .btn:hover {
+                background-color: #b09614;
+            }
+
+            /* Responsive Design */
+            @media (max-width: 992px) {
+
+                .cart-table th,
+                .cart-table td {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+
+                .qty-btn {
+                    padding: 5px;
+                    font-size: 12px;
+                }
+
+                .qty-input {
+                    width: 40px;
+                }
+
+                .cart-actions {
+                    flex-direction: column;
+                }
+
+                .cart-actions .form-control {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                .cart-actions .btn {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .cart-totals table {
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .cart-table {
+                    display: block;
+                    overflow-x: auto;
+                }
+
+                .cart-table th,
+                .cart-table td {
+                    font-size: 12px;
+                    padding: 8px;
+                    white-space: nowrap;
+                }
+
+                .cart-totals table {
+                    font-size: 12px;
+                }
+
+                .qty-input {
+                    width: 35px;
+                }
+
+                .cart-actions .btn {
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .cart-wrapper {
+                    padding: 15px;
+                }
+
+                .cart-table th,
+                .cart-table td {
+                    font-size: 11px;
+                    padding: 6px;
+                }
+
+                .qty-input {
+                    width: 30px;
+                }
+
+                .cart-actions .btn {
+                    font-size: 12px;
+                    padding: 8px;
+                }
+            }
+        </style>
+
+
+
+
+        <section class="footer p-5"
+            style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
+            <div class="container-fluid">
+                <div class="row g-5">
+                    <!-- Logo and Payment Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item text-start">
+                            <a href="index.html" class="navbar-brand text-start">
+                                <img src="assets/images/logo/maluk-logo.png" width="50%" alt="Maluk Logo"> </a>
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit com.</p>
+                            <div class="follow ">
+                                <ul class="text-start ">
+                                    <h4 class="text-start "><strong>Follow Us </strong></h4>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="assets/images/icons/pinterest.png" width="25px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/linkedin.png" width="27px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/youtube.png" width="27px" alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/facebook.png" width="25px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/insta.png" width="27px" alt="not found"></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
+                            <ul>
+                                <li><a href="index.html"><strong>Home</strong></a></li>
+                                <li><a href="about.html"><strong>About Us</strong></a></li>
+                                <li><a href="category.html"><strong>Category</strong></a></li>
+                                <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Useful Links Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Useful Links</strong></h4>
+                            <ul>
+                                <li><a href="privacypolicy.html"><strong>Privacy Policy</strong></a>
+                                </li>
+                                <li><a href="termsandconditions.html"><strong>Terms of
+                                            Service</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
+                            <address class="contact-information text-dark">
+                                <ul>
+                                    <li class="py-1"><i class="fas fa-map-marker-alt"></i>
+                                        <a href="https://maps.app.goo.gl/JdfaCXvXaFX8GR2N7"> <strong>E-169 Lower Ground
+                                                Part
+                                                1,
+                                                Sector 63 G B Nagar,
+                                                Noida, Uttar Pradesh, India, 201301</strong></a>
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-envelope"></i>
+                                        <a href="mailto:operations@malukforever.com">
+                                            <strong>operations@malukforever.com</strong></a>,
+
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-phone-alt"></i>
+                                        <a href="tel:+918588801711"> <strong>+91 85888 01711</strong> </a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartItems = document.querySelectorAll('.cart-item');
+            const cartSubtotal = document.getElementById('cart-subtotal');
+            const cartTotal = document.getElementById('cart-total');
+
+            // Function to calculate and update totals
+            const updateTotals = () => {
+                let subtotal = 0;
+
+                cartItems.forEach(item => {
+                    const priceElement = item.querySelector('.price');
+                    const totalElement = item.querySelector('.total');
+                    const qtyInput = item.querySelector('.qty-input');
+
+                    const priceINR = parseFloat(priceElement.getAttribute('data-price'));
+                    const quantity = parseInt(qtyInput.value, 10);
+                    const totalINR = priceINR * quantity;
+
+                    totalElement.querySelector('.amount').textContent = `₹ ${totalINR.toFixed(2)}`;
+                    subtotal += totalINR;
+                });
+
+                cartSubtotal.textContent = `₹ ${subtotal.toFixed(2)}`;
+                cartTotal.textContent = `₹ ${subtotal.toFixed(2)}`;
+            };
+
+            // Event listeners for quantity buttons
+            cartItems.forEach(item => {
+                const qtyInput = item.querySelector('.qty-input');
+                const minusButton = item.querySelector('.quantity-minus');
+                const plusButton = item.querySelector('.quantity-plus');
+
+                minusButton.addEventListener('click', () => {
+                    if (qtyInput.value > 1) {
+                        qtyInput.value = parseInt(qtyInput.value, 10) - 1;
+                        updateTotals();
+                    }
+                });
+
+                plusButton.addEventListener('click', () => {
+                    qtyInput.value = parseInt(qtyInput.value, 10) + 1;
+                    updateTotals();
+                });
+
+                qtyInput.addEventListener('change', () => {
+                    if (qtyInput.value < 1) qtyInput.value = 1;
+                    updateTotals();
+                });
+            });
+
+            // Initial calculation
+            updateTotals();
+        });
+    </script>
+
+
+    <!-- Include Font Awesome (optional, for icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMbYHsl7fZ2LlNV03jE9aBIL0CUv9a6Dkn9aei4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

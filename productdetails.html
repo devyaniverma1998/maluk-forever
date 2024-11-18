@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MalukForever || Home</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Navbar Brand/Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/maluk-logo.png" width="80px" alt="">
+                </a>
+
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links and My Account icon -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="category.html" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#skin-care">Skin Care</a></li>
+                                <li><a class="dropdown-item" href="#personal-care">Personal Care</a></li>
+                                <li><a class="dropdown-item" href="#hair-accessories">Hair Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i> Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="trackingpage.html">Package Track </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <section class=" py-5">
+            <div class="container ">
+                <div class="row single-page py-3">
+                    <!-- card left -->
+                    <div class="col-md-6">
+                        <div class="product-imgs">
+                            <div class="img-display">
+                                <div class="img-showcase">
+                                    <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                    <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                    <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                    <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                </div>
+                            </div>
+                            <div class="img-select">
+                                <div class="img-item">
+                                    <a href="#" data-id="1">
+                                        <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                    </a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="2">
+                                        <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                    </a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="3">
+                                        <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                    </a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="4">
+                                        <img src="assets/images/products/image3.jpg" alt="shoe image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card right -->
+                    <div class="col-md-6">
+                        <div class="product-content">
+                            <h3 class="product-title"> Shower Oil</h3>
+                            <a href="#" class="product-link"> Skin Care</a>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7(21)</span>
+                            </div>
+                            <div class="product-detail">
+                                <p><span style="color: #b09614; font-weight: bold;">About this item:</span> Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Consequatur, perferendis eius.
+                                    Dignissimos, labore suscipit. Unde. </p>
+                                <p> <span style="color: #b09614; font-weight: bold;"> Available: </span> <i
+                                        class="fas fa-check  "></i> in stock</p>
+                            </div>
+
+                            <div class="quantity">
+                                <button class="quantity-minus qty-btn">-</button>
+                                <input type="number" class="qty-input" value="1" min="1" max="99">
+                                <button class="quantity-plus qty-btn">+</button>
+                            </div>
+
+                            <div class="product-price">
+                                <p class="last-price"> Price: <span id="old-price"> ₹ 1499.99</span></p>
+                                <p class="new-price">Offer Price: <span id="new-price">₹ 999.99</span></p>
+                            </div>
+
+                            <div class="total-price">
+                                <p>Total Price: ₹ <span id="total-price">999.99</span></p>
+                            </div>
+
+                            <div class="purchase-info">
+                                <a href="cart.html">
+                                    <button type="button" class="btn">
+                                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </a>
+                                <a href="checkout.html">
+                                    <button type="button" class="btn">Buy Now</button>
+                                </a>
+                            </div>
+
+                            <div class="social-links">
+                                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <style>
+            .quantity {
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+            }
+
+            .qty-btn {
+                background-color: #f9f5e1;
+                color: black;
+                cursor: pointer;
+                font-size: 1.2rem;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #b09614;
+                text-align: center;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+            }
+
+            .qty-btn:hover {
+                background-color: #b09614;
+                color: white;
+            }
+
+            .qty-input {
+                width: 60px;
+                padding: 0.5rem;
+                text-align: center;
+                font-size: 1.2rem;
+                margin: 0 0.5rem;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+                outline: none;
+            }
+
+            .product-imgs img {
+                width: 100%;
+            }
+
+            .img-display {
+                overflow: hidden;
+            }
+
+            .img-showcase {
+                display: flex;
+                width: 100%;
+                transition: all 0.5s ease;
+            }
+
+            .img-showcase img {
+                min-width: 100%;
+            }
+
+            .img-select {
+                display: flex;
+                margin-top: 0.5rem;
+            }
+
+            .img-item {
+                margin: 0.3rem;
+            }
+
+            .img-item:nth-child(1),
+            .img-item:nth-child(2),
+            .img-item:nth-child(3) {
+                margin-right: 0;
+            }
+
+            .img-item:hover {
+                opacity: 0.8;
+            }
+
+            .product-content {
+                padding: 0px 20px;
+            }
+
+            .product-title {
+                font-size: 2rem;
+                text-transform: capitalize;
+                font-weight: 700;
+                position: relative;
+                color: #12263a;
+                margin: 1rem 0;
+            }
+
+            .product-title::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 4px;
+                width: 80px;
+                background: #12263a;
+            }
+
+            .product-link {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 0.9rem;
+                display: inline-block;
+                margin-bottom: 0.5rem;
+                background: #b09614;
+                color: #fff;
+                padding: 0 0.3rem;
+                transition: all 0.5s ease;
+            }
+
+            .product-link:hover {
+                opacity: 0.9;
+            }
+
+            .product-rating {
+                color: #ffc107;
+            }
+
+            .product-rating span {
+                font-weight: 600;
+                color: #252525;
+            }
+
+            .product-price {
+                margin: 1rem 0;
+
+                font-weight: 700;
+            }
+
+            .product-price span {
+                font-weight: 400;
+            }
+
+            .last-price span {
+                color: #b09614;
+                text-decoration: line-through;
+            }
+
+            .new-price span {
+                color: #b09614;
+            }
+
+            .purchase-info input,
+            .purchase-info .btn {
+                border: 1.5px solid #ddd;
+                text-align: center;
+                padding: 0.45rem 0.8rem;
+                outline: 0;
+            }
+
+            .purchase-info input {
+                width: 60px;
+            }
+
+            .purchase-info .btn {
+                cursor: pointer;
+                color: #fff;
+            }
+
+            .purchase-info .btn:first-of-type {
+                background: #b09614;
+            }
+
+            .purchase-info .btn:last-of-type {
+                background: #f9f5e2;
+                color: black;
+            }
+
+            .social-links {
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+            }
+
+            .social-links a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                border: 1px solid #b09614;
+                margin: 0 0.2rem;
+                border-radius: 50%;
+                text-decoration: none;
+                font-size: 0.8rem;
+                transition: all 0.5s ease;
+            }
+
+            .social-links a:hover {
+                background: #000;
+                border-color: transparent;
+                color: #fff;
+            }
+
+            .fa-brands,
+            .fab {
+                font-family: 'Font Awesome 6 Brands';
+                font-weight: 400;
+                color: #b09614;
+            }
+
+            .product-detail {
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+
+            .product-detail span {
+                color: #b09614;
+                font-weight: bold;
+            }
+
+            .product-rating i {
+                margin-right: 0.2rem;
+            }
+
+            .single-page {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .purchase-info a {
+                text-decoration: none;
+                /* Remove the underline from the link */
+            }
+
+            .purchase-info a .btn {
+                transition: background-color 0.3s ease;
+            }
+
+            .purchase-info a .btn:hover {
+                color: white;
+                background-color: #b09614;
+                /* Add hover effect */
+            }
+        </style>
+
+        <script>// Get DOM elements
+            const qtyInput = document.querySelector('.qty-input');
+            const qtyMinus = document.querySelector('.quantity-minus');
+            const qtyPlus = document.querySelector('.quantity-plus');
+            const totalPriceElement = document.getElementById('total-price');
+            const newPriceElement = document.getElementById('new-price');
+
+            // Get the price
+            const newPrice = parseFloat(newPriceElement.innerText.replace('₹', ''));
+
+            // Function to update the total price
+            function updateTotalPrice() {
+                const quantity = parseInt(qtyInput.value, 10);
+                const totalPrice = newPrice * quantity;
+                totalPriceElement.innerText = totalPrice.toFixed(2);
+            }
+
+            // Event listeners for quantity change
+            qtyMinus.addEventListener('click', () => {
+                if (qtyInput.value > 1) {
+                    qtyInput.value = parseInt(qtyInput.value, 10) - 1;
+                    updateTotalPrice();
+                }
+            });
+
+            qtyPlus.addEventListener('click', () => {
+                qtyInput.value = parseInt(qtyInput.value, 10) + 1;
+                updateTotalPrice();
+            });
+
+            // Event listener for input change (in case the user manually changes the quantity)
+            qtyInput.addEventListener('input', () => {
+                if (qtyInput.value < 1) {
+                    qtyInput.value = 1;
+                }
+                updateTotalPrice();
+            });
+
+            // Initial total price calculation
+            updateTotalPrice();
+        </script>
+        <script>
+            const imgs = document.querySelectorAll('.img-select a');
+            const imgBtns = [...imgs];
+            let imgId = 1;
+
+            imgBtns.forEach((imgItem) => {
+                imgItem.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    imgId = imgItem.dataset.id;
+                    slideImage();
+                });
+            });
+
+            function slideImage() {
+                const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+                document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+            }
+
+            window.addEventListener('resize', slideImage);
+        </script>
+
+
+        <section class="footer p-5"
+            style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
+            <div class="container-fluid">
+                <div class="row g-5">
+                    <!-- Logo and Payment Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item text-start">
+                            <a href="index.html" class="navbar-brand text-start">
+                                <img src="assets/images/logo/maluk-logo.png" width="50%" alt="Maluk Logo"> </a>
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit com.</p>
+                            <div class="follow ">
+                                <ul class="text-start ">
+                                    <h4 class="text-start "><strong>Follow Us </strong></h4>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="assets/images/icons/pinterest.png" width="25px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/linkedin.png" width="27px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/youtube.png" width="27px" alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/facebook.png" width="25px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/insta.png" width="27px" alt="not found"></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
+                            <ul>
+                                <li><a href="index.html"><strong>Home</strong></a></li>
+                                <li><a href="about.html"><strong>About Us</strong></a></li>
+                                <li><a href="category.html"><strong>Category</strong></a></li>
+                                <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Useful Links Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Useful Links</strong></h4>
+                            <ul>
+                                <li><a href="privacypolicy.html"><strong>Privacy Policy</strong></a>
+                                </li>
+                                <li><a href="termsandconditions.html"><strong>Terms of
+                                            Service</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
+                            <address class="contact-information text-dark">
+                                <ul>
+                                    <li class="py-1"><i class="fas fa-map-marker-alt"></i>
+                                        <a href="https://maps.app.goo.gl/JdfaCXvXaFX8GR2N7"> <strong>E-169 Lower
+                                                Ground
+                                                Part
+                                                1,
+                                                Sector 63 G B Nagar,
+                                                Noida, Uttar Pradesh, India, 201301</strong></a>
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-envelope"></i>
+                                        <a href="mailto:operations@malukforever.com">
+                                            <strong>operations@malukforever.com</strong></a>,
+
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-phone-alt"></i>
+                                        <a href="tel:+918588801711"> <strong>+91 85888 01711</strong> </a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Include Font Awesome (optional, for icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMbYHsl7fZ2LlNV03jE9aBIL0CUv9a6Dkn9aei4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

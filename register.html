@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MalukForever || Home</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Navbar Brand/Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/maluk-logo.png" width="80px" alt="">
+                </a>
+
+                <!-- Toggler button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links and My Account icon -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="category.html" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#skin-care">Skin Care</a></li>
+                                <li><a class="dropdown-item" href="#personal-care">Personal Care</a></li>
+                                <li><a class="dropdown-item" href="#hair-accessories">Hair Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i> Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="trackingpage.html">Package Track </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="breadcrumb-banner">
+            <div class="breadcrumb-content">
+                <h1>Register</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li> / </li>
+                        <li>Register</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <section class="register-section py-5">
+            <div class="container register-cont">
+                <div class="row justify-content-center align-items-center">
+                    <!-- Left Side: Logo and Welcome Message -->
+                    <div class="col-md-6 d-flex justify-content-center p-5">
+                        <div class="register-logo-container text-center">
+                            <img src="assets/images/logo/maluk-logo.png" alt="Logo" class="img-fluid">
+                            <h5 style="color: #b09615; font-weight: bold; border-top: 2px solid #f9f9f9;">Welcome</h5>
+                            <p>Please register to create an account. If you already have an account, you can log in.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Registration Form -->
+                    <div class="col-md-6">
+                        <div class="register-form-container">
+                            <form action="#" method="post">
+                                <!-- Full Name -->
+                                <div class="register-form-group">
+                                    <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                                </div>
+
+                                <!-- Email Address -->
+                                <div class="register-form-group">
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="register-form-group">
+                                    <input type="tel" id="tel" name="tel" placeholder="Mobile Number" required>
+                                </div>
+
+                                <!-- Password -->
+                                <div class="register-form-group">
+                                    <input type="password" id="password" name="password" placeholder="Password"
+                                        required>
+                                </div>
+
+                                <!-- Confirm Password -->
+                                <div class="register-form-group">
+                                    <input type="password" id="confirm-password" name="confirm-password"
+                                        placeholder="Confirm Password" required>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="register-button">Register</button>
+
+                                <!-- Additional Links -->
+                                <div class="register-additional-links">
+                                    <p>Already have an account? <a href="#">Log In</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* Main section */
+            .register-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                background-color: #f9f9f9;
+            }
+
+            /* Logo container */
+            .register-logo-container img {
+                width: 200px;
+                border-radius: 10px;
+            }
+
+            /* Registration form container */
+            .register-form-container {
+                border-left: 2px solid #f9f9f9;
+                padding: 40px;
+                width: 100%;
+                max-width: 400px;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            .register-cont {
+                max-width: 800px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                background-color: white;
+            }
+
+            /* Form group (input fields) */
+            .register-form-group {
+                margin-bottom: 20px;
+            }
+
+            .register-form-group input {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 16px;
+                background-color: #f1efdd;
+                color: #333;
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+
+            .register-form-group input:focus {
+                border-color: #b09615;
+                background-color: #f5f3e4;
+                outline: none;
+            }
+
+            /* Register button */
+            .register-button {
+                width: 100%;
+                padding: 12px;
+                background-color: #b09615;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .register-button:hover {
+                background-color: #998410;
+            }
+
+            /* Additional links */
+            .register-additional-links {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .register-additional-links a {
+                color: #b09615;
+                text-decoration: none;
+            }
+
+            .register-additional-links a:hover {
+                text-decoration: underline;
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .register-section {
+                    flex-direction: column;
+                }
+
+                .register-form-container {
+                    padding: 30px;
+                    width: 90%;
+                }
+
+                .register-container img {
+                    max-width: 80%;
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+
+        <section class="footer p-5"
+            style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
+            <div class="container-fluid">
+                <div class="row g-5">
+                    <!-- Logo and Payment Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item text-start">
+                            <a href="index.html" class="navbar-brand text-start">
+                                <img src="assets/images/logo/maluk-logo.png" width="50%" alt="Maluk Logo"> </a>
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit com.</p>
+                            <div class="follow ">
+                                <ul class="text-start ">
+                                    <h4 class="text-start "><strong>Follow Us </strong></h4>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="assets/images/icons/pinterest.png" width="25px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/linkedin.png" width="27px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/youtube.png" width="27px" alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/facebook.png" width="25px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank">
+                                            <img src="assets/images/icons/insta.png" width="27px" alt="not found"></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
+                            <ul>
+                                <li><a href="index.html"><strong>Home</strong></a></li>
+                                <li><a href="about.html"><strong>About Us</strong></a></li>
+                                <li><a href="category.html"><strong>Category</strong></a></li>
+                                <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Useful Links Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Useful Links</strong></h4>
+                            <ul>
+                                <li><a href="privacypolicy.html"><strong>Privacy Policy</strong></a>
+                                </li>
+                                <li><a href="termsandconditions.html"><strong>Terms of
+                                            Service</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
+                            <address class="contact-information text-dark">
+                                <ul>
+                                    <li class="py-1"><i class="fas fa-map-marker-alt"></i>
+                                        <a href="https://maps.app.goo.gl/JdfaCXvXaFX8GR2N7"> <strong>E-169 Lower Ground
+                                                Part
+                                                1,
+                                                Sector 63 G B Nagar,
+                                                Noida, Uttar Pradesh, India, 201301</strong></a>
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-envelope"></i>
+                                        <a href="mailto:operations@malukforever.com">
+                                            <strong>operations@malukforever.com</strong></a>,
+
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-phone-alt"></i>
+                                        <a href="tel:+918588801711"> <strong>+91 85888 01711</strong> </a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Include Font Awesome (optional, for icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMbYHsl7fZ2LlNV03jE9aBIL0CUv9a6Dkn9aei4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
