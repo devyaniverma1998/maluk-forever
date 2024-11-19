@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MalukForever || Home</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
 </head>
-
 
 <body>
 
@@ -82,6 +79,144 @@
                 </div>
             </div>
         </nav>
+
+
+        <section class="breadcrumb-banner">
+            <div class="breadcrumb-content">
+                <h1>Shipping Policy</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li> / </li>
+                        <li>Shipping Policy</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+
+        <section class="shipping-policy">
+            <h1>Shipping Policy</h1>
+
+            <h2>How does the delivery process work?</h2>
+            <p>Once your order is successfully processed, we thoroughly inspect the products to ensure they are in
+                perfect condition. After passing our quality check, the items are carefully packed and handed over to
+                our trusted delivery partner. Our delivery partners will ensure your package reaches you as quickly as
+                possible. If they are unable to deliver due to an incorrect address or timing issues, they will contact
+                you to resolve the matter.</p>
+
+            <h2>How are items packaged?</h2>
+            <p>We are committed to sustainable practices, and this includes our packaging. Malukforever uses
+                eco-friendly cardboard packaging made from 100% recycled paper. Where possible, we opt for paper-fillers
+                instead of plastic bubble wrap. This is part of our ongoing efforts to minimize our environmental
+                impact. We continue to explore new, innovative solutions to further reduce plastic use while ensuring
+                your order’s safety.</p>
+
+            <h2>What locations do you ship to?</h2>
+            <p>Currently, Malukforever ships only within [Country] and does not offer international shipping. We are
+                focused on delivering to a wide range of locations within the country and will continue to expand our
+                shipping services in the future.</p>
+
+            <h2>How can I track my order?</h2>
+            <p>Once your order is shipped, you will receive a confirmation message via email and SMS. You can track the
+                status of your order by visiting the "Track My Order" section on our website or by using the tracking
+                link provided. Additionally, you can opt to receive order updates via WhatsApp for your convenience.</p>
+
+            <h2>What is the estimated delivery time?</h2>
+            <p>Most orders are dispatched within 1-4 business days, excluding weekends and public holidays. However,
+                some products may need to be sourced directly from the brand or vendor, which could cause a slight
+                delay. If you’re placing an order during a sale or promotional event, please note that delivery may take
+                longer due to high demand. Our goal is to dispatch all orders within 5 business days in such cases.</p>
+
+            <h2>Will my order be shipped in multiple shipments?</h2>
+            <p>This can happen when items in your order are sourced from different warehouses or suppliers. Don’t worry!
+                You will only be charged shipping fees on the first package that arrives, and any subsequent packages
+                will be delivered at no extra shipping cost.</p>
+
+            <h2>Are there any shipping charges?</h2>
+            <p>Shipping charges are based on the total value of your order and your location.</p>
+            <ul>
+                <li>For new customers: Free shipping on orders above ₹299.</li>
+                <li>For returning customers: Free shipping on orders above ₹149.</li>
+            </ul>
+            <p>Please note that we currently do not accept Cash on Delivery (COD) for orders below ₹249 or above
+                ₹50,000.</p>
+
+            <h2>Does Malukforever ship outside of [Country]?</h2>
+            <p>At this time, Malukforever does not offer international shipping. We are focused on providing excellent
+                service within [Country] and hope to expand our shipping options in the future.</p>
+        </section>
+
+        <style>
+            /* Section styling for Shipping Policy */
+            .shipping-policy {
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 40px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .shipping-policy h1 {
+                font-size: 2.5rem;
+                text-align: center;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            .shipping-policy h2 {
+                font-size: 1.8rem;
+                color: #b09614;
+                /* Blue color for headings */
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+
+            .shipping-policy p {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #333;
+                margin-bottom: 15px;
+            }
+
+            .shipping-policy ul {
+                list-style: disc;
+                padding-left: 20px;
+                margin-bottom: 20px;
+            }
+
+            .shipping-policy ul li {
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+
+            .shipping-policy ul li::marker {
+                color: #b09614;
+                /* Blue color for list markers */
+            }
+
+            /* Responsive styling */
+            @media (max-width: 768px) {
+                .shipping-policy {
+                    padding: 15px;
+                }
+
+                .shipping-policy h1 {
+                    font-size: 2rem;
+                }
+
+                .shipping-policy h2 {
+                    font-size: 1.5rem;
+                }
+
+                .shipping-policy p,
+                .shipping-policy ul li {
+                    font-size: 0.95rem;
+                }
+            }
+        </style>
+        
         <section class="footer p-5"
         style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
         <div class="container-fluid">
@@ -182,58 +317,7 @@
         </div>
     </section>
 
-
     </div>
-    <script>
-        // Initial filter setup
-        filterSelection("track");
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            // Show elements that match the selected filter
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
-        }
-
-        // Show filtered elements
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {
-                    element.className += " " + arr2[i];
-                }
-            }
-        }
-
-        // Hide elements that are not selected
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-
-        // Add active class to the current control button
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-    </script>
-
 
     <!-- Include Font Awesome (optional, for icons) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
