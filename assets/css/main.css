@@ -7,7 +7,9 @@ body {
 * {
   font-family: poppins;
 }
-
+a{
+  color:#b09614;
+}
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
