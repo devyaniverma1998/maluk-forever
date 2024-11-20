@@ -84,17 +84,14 @@ a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 50px 0; /* Adjust padding as needed */
-  color: black; /* Ensures text is visible on the background */
+  padding: 100px 0; /* Adjust padding as needed */
+  color: white; /* Ensures text is visible on the background */
   text-align: start;
 }
 .coloum-care {
   display: flex;
 }
 
-.coloum-care h6 {
-  color: #b09614;
-}
 .product img {
   width: 100%;
   height: auto;
