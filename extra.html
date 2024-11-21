@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MalukForever || About Us</title>
-        <!-- Favicon and Apple Touch Icon -->
-        <link href="assets/images/favicon/favicon.png" rel="icon" type="image/png">
-        <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MalukForever || Shop </title>
+    <!-- Favicon and Apple Touch Icon -->
+    <link href="assets/images/favicon/favicon.png" rel="icon" type="image/png">
+    <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
 <body>
 
     <div class="main">
@@ -81,202 +83,6 @@
                 </div>
             </div>
         </nav>
-        <section class="section-product-lists py-5">
-            <div class="container">
-                <div class="row">
-                    <!-- Filter Section -->
-                    <aside class="col-md-3 category-filter px-5">
-                        <h3>Filters</h3>
-
-                        <!-- Price Range Filter -->
-                        <h4>Price Range</h4>
-                        <div class="price-range mb-3">
-                            <input type="range" id="price-range" name="price-range" min="0" max="20000" step="100"
-                                class="form-range" aria-label="Price Range" style="color: #f4f2e3;" />
-                            <span id="price-output" class="d-block mt-2">₹ 0 to ₹ 20,000</span>
-                        </div>
-
-                        <!-- Category Filter -->
-                        <h4>Category</h4>
-                        <div>
-                            <label class="d-block">
-                                <input type="checkbox" class="category-filter-checkbox me-2" value="skin-care" />
-                                Skin Care
-                            </label>
-                            <label class="d-block">
-                                <input type="checkbox" class="category-filter-checkbox me-2" value="personal-care" />
-                                Personal Care
-                            </label>
-                            <label class="d-block">
-                                <input type="checkbox" class="category-filter-checkbox me-2" value="hair-accessories" />
-                                Hair Accessories
-                            </label>
-                        </div>
-                    </aside>
-
-                    <!-- Product List Section -->
-                    <div class="col-md-9">
-                        <div class="row" id="product-list-list">
-                            <!-- Example Product -->
-                            <div class="col-md-4 mb-4 product-list" data-category="skin-care" data-price="999">
-                                <div class="card h-100">
-                                    <img src="assets/images/products/Skin-Care.jpg" alt="Shower Oil"
-                                        class="card-img-top img-fluid" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Shower Oil</h5>
-                                        <div class="noe"
-                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
-                                            <a href="productdetails.html" class="btn btn-view"><i
-                                                    class="fas fa-eye icon"></i></a>
-                                            <a href="productdetails.html" class="btn btn-love"><i
-                                                    class="fas fa-heart icon"></i></a>
-                                            <a href="cart.html" class="btn btn-buy"><i
-                                                    class="fas fa-shopping-cart icon"></i></a>
-                                        </div>
-                                        <div class="mt-auto">
-                                            <p class="text-muted mb-1"><del>₹1499.99</del></p>
-                                            <p class="fw-bold">₹999.99</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Repeat for other products -->
-                            <div class="col-md-4 mb-4 product-list" data-category="personal-care" data-price="1200">
-                                <div class="card h-100">
-                                    <img src="assets/images/products/Personal-Care.jpg" alt="Body Lotion"
-                                        class="card-img-top img-fluid" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Body Lotion</h5>
-                                        <div class="noe"
-                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
-                                            <a href="productdetails.html" class="btn btn-view"><i
-                                                    class="fas fa-eye icon"></i></a>
-                                            <a href="productdetails.html" class="btn btn-love"><i
-                                                    class="fas fa-heart icon"></i></a>
-                                            <a href="cart.html" class="btn btn-buy"><i
-                                                    class="fas fa-shopping-cart icon"></i></a>
-                                        </div>
-                                        <div class="mt-auto">
-                                            <p class="text-muted mb-1"><del>₹1499.99</del></p>
-                                            <p class="fw-bold">₹1200.00</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-4 product-list" data-category="hair-accessories" data-price="499">
-                                <div class="card h-100">
-                                    <img src="assets/images/products/image3.jpg" alt="Hair Brush"
-                                        class="card-img-top img-fluid" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Hair Brush</h5>
-                                        <div class="noe"
-                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
-                                            <a href="productdetails.html" class="btn btn-view"><i
-                                                    class="fas fa-eye icon"></i></a>
-                                            <a href="productdetails.html" class="btn btn-love"><i
-                                                    class="fas fa-heart icon"></i></a>
-                                            <a href="cart.html" class="btn btn-buy"><i
-                                                    class="fas fa-shopping-cart icon"></i></a>
-                                        </div>
-                                        <div class="mt-auto">
-                                            <p class="text-muted mb-1"><del>₹999.99</del></p>
-                                            <p class="fw-bold">₹499.99</p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4 product-list" data-category="skin-care" data-price="999">
-                                <div class="card h-100">
-                                    <img src="assets/images/products/Skin-Care.jpg" alt="Shower Oil"
-                                        class="card-img-top img-fluid" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Shower Oil</h5>
-                                        <div class="noe"
-                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
-                                            <a href="productdetails.html" class="btn btn-view"><i
-                                                    class="fas fa-eye icon"></i></a>
-                                            <a href="productdetails.html" class="btn btn-love"><i
-                                                    class="fas fa-heart icon"></i></a>
-                                            <a href="cart.html" class="btn btn-buy"><i
-                                                    class="fas fa-shopping-cart icon"></i></a>
-                                        </div>
-                                        <div class="mt-auto">
-                                            <p class="text-muted mb-1"><del>₹1499.99</del></p>
-                                            <p class="fw-bold">₹999.99</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Repeat for other products -->
-                            <div class="col-md-4 mb-4 product-list" data-category="personal-care" data-price="1200">
-                                <div class="card h-100">
-                                    <img src="assets/images/products/Personal-Care.jpg" alt="Body Lotion"
-                                        class="card-img-top img-fluid" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Body Lotion</h5>
-                                        <div class="noe"
-                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
-                                            <a href="productdetails.html" class="btn btn-view"><i
-                                                    class="fas fa-eye icon"></i></a>
-                                            <a href="productdetails.html" class="btn btn-love"><i
-                                                    class="fas fa-heart icon"></i></a>
-                                            <a href="cart.html" class="btn btn-buy"><i
-                                                    class="fas fa-shopping-cart icon"></i></a>
-                                        </div>
-                                        <div class="mt-auto">
-                                            <p class="text-muted mb-1"><del>₹1499.99</del></p>
-                                            <p class="fw-bold">₹1200.00</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-4 product-list" data-category="hair-accessories" data-price="499">
-                                <div class="card h-100">
-                                    <img src="assets/images/products/image3.jpg" alt="Hair Brush"
-                                        class="card-img-top img-fluid" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Hair Brush</h5>
-                                        <div class="noe"
-                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
-                                            <a href="productdetails.html" class="btn btn-view"><i
-                                                    class="fas fa-eye icon"></i></a>
-                                            <a href="productdetails.html" class="btn btn-love"><i
-                                                    class="fas fa-heart icon"></i></a>
-                                            <a href="cart.html" class="btn btn-buy"><i
-                                                    class="fas fa-shopping-cart icon"></i></a>
-                                        </div>
-                                        <div class="mt-auto">
-                                            <p class="text-muted mb-1"><del>₹999.99</del></p>
-                                            <p class="fw-bold">₹499.99</p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
         <style>
             .section-products .product-list .card-img-top {
                 position: relative;
@@ -412,8 +218,7 @@
                     height: 150px;
                 }
             }
-        </style>
-        <style>
+
             .section-products {
                 height: auto;
                 padding: 50px 0;
@@ -548,11 +353,232 @@
                 }
             }
         </style>
+        <section class="section-product-lists py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Filter Section -->
+                    <aside class="col-md-3 category-filter px-5">
+                        <h3>Filters</h3>
+
+                        <!-- Price Range Filter -->
+                        <h4>Price Range</h4>
+                        <div class="price-range mb-3">
+                            <input type="range" id="price-range" name="price-range" min="0" max="20000" step="100"
+                                class="form-range" aria-label="Price Range" style="color: #f4f2e3;" />
+                            <span id="price-output" class="d-block mt-2">₹ 0 to ₹ 20,000</span>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <h4>Category</h4>
+                        <div>
+                            <label class="d-block">
+                                <input type="checkbox" class="category-filter-checkbox me-2" value="skin-care" />
+                                Skin Care
+                            </label>
+                            <div class="ms-4">
+                                <label class="d-block">
+                                    <input type="checkbox" class="subcategory-filter-checkbox me-2" value="sheet-mask"
+                                        data-parent="skin-care" />
+                                    Sheet Mask
+                                </label>
+                                <label class="d-block">
+                                    <input type="checkbox" class="subcategory-filter-checkbox me-2" value="bath-oil"
+                                        data-parent="skin-care" />
+                                    Bath Oil
+                                </label>
+                                <label class="d-block">
+                                    <input type="checkbox" class="subcategory-filter-checkbox me-2" value="sunscreen"
+                                        data-parent="skin-care" />
+                                    Sunscreen
+                                </label>
+                                <label class="d-block">
+                                    <input type="checkbox" class="subcategory-filter-checkbox me-2" value="serum"
+                                        data-parent="skin-care" />
+                                    Serum
+                                </label>
+                            </div>
+                            <label class="d-block">
+                                <input type="checkbox" class="category-filter-checkbox me-2" value="personal-care" />
+                                Personal Care
+                            </label>
+                            <label class="d-block">
+                                <input type="checkbox" class="category-filter-checkbox me-2" value="hair-accessories" />
+                                Hair Accessories
+                            </label>
+                            <div class="ms-4">
+                                <label class="d-block">
+                                    <input type="checkbox" class="subcategory-filter-checkbox me-2" value="claw-clips"
+                                        data-parent="hair-accessories" />
+                                    Claw Clips
+                                </label>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                    <!-- Product List Section -->
+                    <div class="col-md-9">
+                        <div class="row" id="product-list-list">
+                            <!-- Skin Care - Sheet Mask -->
+                            <div class="col-md-4 mb-4 product-list" data-category="skin-care"
+                                data-subcategory="sheet-mask" data-price="599">
+                                <div class="card h-100">
+                                    <img src="assets/images/products/Skin-Care.jpg" alt="Sheet Mask"
+                                        class="card-img-top img-fluid" />
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Sheet Mask</h5>
+                                        <div class="noe"
+                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
+                                            <a href="productdetails.html" class="btn btn-view"><i
+                                                    class="fas fa-eye icon"></i></a>
+                                            <a href="productdetails.html" class="btn btn-love"><i
+                                                    class="fas fa-heart icon"></i></a>
+                                            <a href="cart.html" class="btn btn-buy"><i
+                                                    class="fas fa-shopping-cart icon"></i></a>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p class="text-muted mb-1"><del>₹799.99</del></p>
+                                            <p class="fw-bold">₹599.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skin Care - Bath Oil -->
+                            <div class="col-md-4 mb-4 product-list" data-category="skin-care"
+                                data-subcategory="bath-oil" data-price="899">
+                                <div class="card h-100">
+                                    <img src="assets/images/products/Skin-Care.jpg" alt="Bath Oil"
+                                        class="card-img-top img-fluid" />
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Bath Oil</h5>
+                                        <div class="noe"
+                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
+                                            <a href="productdetails.html" class="btn btn-view"><i
+                                                    class="fas fa-eye icon"></i></a>
+                                            <a href="productdetails.html" class="btn btn-love"><i
+                                                    class="fas fa-heart icon"></i></a>
+                                            <a href="cart.html" class="btn btn-buy"><i
+                                                    class="fas fa-shopping-cart icon"></i></a>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p class="text-muted mb-1"><del>₹999.99</del></p>
+                                            <p class="fw-bold">₹899.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skin Care - Sunscreen -->
+                            <div class="col-md-4 mb-4 product-list" data-category="skin-care"
+                                data-subcategory="sunscreen" data-price="799">
+                                <div class="card h-100">
+                                    <img src="assets/images/products/Skin-Care.jpg" alt="Sunscreen"
+                                        class="card-img-top img-fluid" />
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Sunscreen</h5>
+                                        <div class="noe"
+                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
+                                            <a href="productdetails.html" class="btn btn-view"><i
+                                                    class="fas fa-eye icon"></i></a>
+                                            <a href="productdetails.html" class="btn btn-love"><i
+                                                    class="fas fa-heart icon"></i></a>
+                                            <a href="cart.html" class="btn btn-buy"><i
+                                                    class="fas fa-shopping-cart icon"></i></a>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p class="text-muted mb-1"><del>₹999.99</del></p>
+                                            <p class="fw-bold">₹799.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skin Care - Serum -->
+                            <div class="col-md-4 mb-4 product-list" data-category="skin-care" data-subcategory="serum"
+                                data-price="1200">
+                                <div class="card h-100">
+                                    <img src="assets/images/products/Skin-Care.jpg" alt="Serum"
+                                        class="card-img-top img-fluid" />
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Serum</h5>
+                                        <div class="noe"
+                                            style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
+                                            <a href="productdetails.html" class="btn btn-view"><i
+                                                    class="fas fa-eye icon"></i></a>
+                                            <a href="productdetails.html" class="btn btn-love"><i
+                                                    class="fas fa-heart icon"></i></a>
+                                            <a href="cart.html" class="btn btn-buy"><i
+                                                    class="fas fa-shopping-cart icon"></i></a>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p class="text-muted mb-1"><del>₹1499.99</del></p>
+                                            <p class="fw-bold">₹1200.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Demo Product for Personal Care (Cold Wax) -->
+                            <div class="col-md-4 mb-4 product-list" data-category="personal-care"
+                                data-subcategory="cold-wax" data-price="1200">
+                                <div class="card h-100">
+                                    <img src="assets/images/products/Personal-Care.jpg" alt="Cold Wax"
+                                        class="card-img-top img-fluid" />
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Cold Wax</h5>
+                                        <div class="noe"
+                                            style="display: inline-flex; flex-direction: row-reverse; margin: -38px -16px;">
+                                            <a href="productdetails.html" class="btn btn-view"><i
+                                                    class="fas fa-eye icon"></i></a>
+                                            <a href="productdetails.html" class="btn btn-love"><i
+                                                    class="fas fa-heart icon"></i></a>
+                                            <a href="cart.html" class="btn btn-buy"><i
+                                                    class="fas fa-shopping-cart icon"></i></a>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p class="text-muted mb-1"><del>₹1499.99</del></p>
+                                            <p class="fw-bold">₹1200.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Demo Product for Hair Accessories (Claw Clips) -->
+                            <div class="col-md-4 mb-4 product-list" data-category="hair-accessories"
+                                data-subcategory="claw-clips" data-price="499">
+                                <div class="card h-100">
+                                    <img src="assets/images/products/image3.jpg" alt="claw-clips"
+                                        class="card-img-top img-fluid" />
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Claw Clips</h5>
+                                        <div class="noe"
+                                            style="display: inline-flex; flex-direction: row-reverse; margin: -38px -16px;">
+                                            <a href="productdetails.html" class="btn btn-view"><i
+                                                    class="fas fa-eye icon"></i></a>
+                                            <a href="productdetails.html" class="btn btn-love"><i
+                                                    class="fas fa-heart icon"></i></a>
+                                            <a href="cart.html" class="btn btn-buy"><i
+                                                    class="fas fa-shopping-cart icon"></i></a>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <p class="text-muted mb-1"><del>₹999.99</del></p>
+                                            <p class="fw-bold">₹499.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const priceRange = document.getElementById("price-range");
                 const priceOutput = document.getElementById("price-output");
                 const categoryFilters = document.querySelectorAll(".category-filter-checkbox");
+                const subcategoryFilters = document.querySelectorAll(".subcategory-filter-checkbox");
                 const productListList = document.getElementById("product-list-list");
                 const productLists = document.querySelectorAll(".product-list");
 
@@ -566,23 +592,35 @@
                 categoryFilters.forEach((checkbox) => {
                     checkbox.addEventListener("change", filterProductLists);
                 });
+                subcategoryFilters.forEach((checkbox) => {
+                    checkbox.addEventListener("change", filterProductLists);
+                });
 
                 function filterProductLists() {
                     const selectedCategories = Array.from(categoryFilters)
                         .filter((checkbox) => checkbox.checked)
                         .map((checkbox) => checkbox.value);
 
+                    const selectedSubcategories = Array.from(subcategoryFilters)
+                        .filter((checkbox) => checkbox.checked && selectedCategories.includes(checkbox.dataset.parent))
+                        .map((checkbox) => checkbox.value);
+
                     const maxPrice = parseInt(priceRange.value);
 
                     productLists.forEach((productList) => {
                         const productCategory = productList.getAttribute("data-category");
+                        const productSubcategory = productList.getAttribute("data-subcategory");
                         const productPrice = parseInt(productList.getAttribute("data-price"));
 
+                        // Category and subcategory match conditions
                         const matchesCategory =
                             selectedCategories.length === 0 || selectedCategories.includes(productCategory);
+                        const matchesSubcategory =
+                            selectedSubcategories.length === 0 || selectedSubcategories.includes(productSubcategory);
                         const matchesPrice = productPrice <= maxPrice;
 
-                        if (matchesCategory && matchesPrice) {
+                        // Show or hide product based on filters
+                        if (matchesCategory && matchesSubcategory && matchesPrice) {
                             productList.style.display = "block";
                         } else {
                             productList.style.display = "none";
@@ -590,118 +628,119 @@
                     });
                 }
             });
+
         </script>
- <section class="footer p-5"
- style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
- <div class="container-fluid">
-     <div class="row g-5">
-         <!-- Logo and Payment Section -->
-         <div class="col-lg-3 col-md-6">
-             <div class="footer-item text-start">
-                 <a href="index.html" class="navbar-brand text-start">
-                     <img src="assets/images/logo/maluk-logo.png" width="50%" alt="Maluk Forever Logo">
-                 </a>
-                 <p class="text-start"> <strong><em>Enhance Your Beauty</em></strong></p>
+        <section class="footer p-5"
+            style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
+            <div class="container-fluid">
+                <div class="row g-5">
+                    <!-- Logo and Payment Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item text-start">
+                            <a href="index.html" class="navbar-brand text-start">
+                                <img src="assets/images/logo/maluk-logo.png" width="50%" alt="Maluk Forever Logo">
+                            </a>
+                            <p class="text-start"> <strong><em>Enhance Your Beauty</em></strong></p>
 
-                 <div class="follow ">
-                     <ul class="text-start ">
-                         <h4 class="text-start "><strong>Follow Us </strong></h4>
-                         <li>
-                             <a href="https://pin.it/28GVwGnI3" target="_blank">
-                                 <img src="assets/images/icons/pinterest.png" width="27px"
-                                     alt="not found"></a>
-                         </li>
-                         <li><a href="https://www.linkedin.com/in/maluk-forever-900818339/" target="_blank">
-                                 <img src="assets/images/icons/linkedin.png" width="28px"
-                                     alt="not found"></a>
-                         </li>
-                         <li><a href="https://www.youtube.com/@maluk.forever" target="_blank">
-                                 <img src="assets/images/icons/youtube.png" width="28px" alt="not found"></a>
-                         </li>
-                         <li><a href="https://x.com/malukforever" target="_blank">
-                                 <img src="assets/images/icons/twitter.png" width="28px" alt="not found"></a>
-                         </li>
-                         <li><a href="https://www.instagram.com/maluk.forever/?igsh=bDJtdW80aWVlYjFr#"
-                                 target="_blank">
-                                 <img src="assets/images/icons/insta.png" width="31px" alt="not found"></a>
-                         </li>
-                     </ul>
+                            <div class="follow ">
+                                <ul class="text-start ">
+                                    <h4 class="text-start "><strong>Follow Us </strong></h4>
+                                    <li>
+                                        <a href="https://pin.it/28GVwGnI3" target="_blank">
+                                            <img src="assets/images/icons/pinterest.png" width="27px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/in/maluk-forever-900818339/" target="_blank">
+                                            <img src="assets/images/icons/linkedin.png" width="28px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/@maluk.forever" target="_blank">
+                                            <img src="assets/images/icons/youtube.png" width="28px" alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://x.com/malukforever" target="_blank">
+                                            <img src="assets/images/icons/twitter.png" width="28px" alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/maluk.forever/?igsh=bDJtdW80aWVlYjFr#"
+                                            target="_blank">
+                                            <img src="assets/images/icons/insta.png" width="31px" alt="not found"></a>
+                                    </li>
+                                </ul>
 
-                 </div>
+                            </div>
 
-             </div>
-         </div>
+                        </div>
+                    </div>
 
-         <!-- Quick Links Section -->
-         <div class="col-lg-2 col-md-6">
-             <div class="footer-item">
-                 <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
-                 <ul>
-                     <li><a href="index.html"><strong>Home</strong></a></li>
-                     <li><a href="about.html"><strong>About Us</strong></a></li>
-                     <li><a href="blog.html"><strong>Blogs</strong></a></li>
-                     <li><a href="shop.html"><strong>Category</strong></a></li>
-                     <li><a href="gallery.html"><strong>Gallery</strong></a></li>
-                     <li><a href="contact.html"><strong>Contact Us</strong></a></li>
-                     <li><a href="faq.html"><strong> FAQ's</strong></a></li>
+                    <!-- Quick Links Section -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
+                            <ul>
+                                <li><a href="index.html"><strong>Home</strong></a></li>
+                                <li><a href="about.html"><strong>About Us</strong></a></li>
+                                <li><a href="blog.html"><strong>Blogs</strong></a></li>
+                                <li><a href="shop.html"><strong>Category</strong></a></li>
+                                <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+                                <li><a href="faq.html"><strong> FAQ's</strong></a></li>
 
-                 </ul>
-             </div>
-         </div>
-
-
-         <div class="col-lg-3 col-md-6">
-             <div class="footer-item">
-                 <h4 class="text-dark mb-3"><strong>Useful Links</strong></h4>
-
-                 <ul>
-                     <li><a href="ourprivacy.html"><strong>Our Policy</strong></a>
-                     </li>
-                     <li><a href="termsandconditions.html"><strong>Terms And Conditions</strong></a>
-                     </li>
-                     <li><a href="wemake.html"><strong>How We Make</strong></a></li>
-                     <li><a href="fanpage.html"><strong>Fan Page</strong></a></li>
-                     <li><a href="media.html"><strong>Media</strong></a></li>
-                     <li><a href="affiliate.html"><strong> Become an affiliate
-                             </strong></a></li>
-                     <li><a href="feedback.html"><strong> Feedback Form
-                             </strong></a></li>
-                     <li><a href="trackingpage.html"><strong> Track Order </strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
 
 
-                 </ul>
-             </div>
-         </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Useful Links</strong></h4>
+
+                            <ul>
+                                <li><a href="ourprivacy.html"><strong>Our Policy</strong></a>
+                                </li>
+                                <li><a href="termsandconditions.html"><strong>Terms And Conditions</strong></a>
+                                </li>
+                                <li><a href="wemake.html"><strong>How We Make</strong></a></li>
+                                <li><a href="fanpage.html"><strong>Fan Page</strong></a></li>
+                                <li><a href="media.html"><strong>Media</strong></a></li>
+                                <li><a href="affiliate.html"><strong> Become an affiliate
+                                        </strong></a></li>
+                                <li><a href="feedback.html"><strong> Feedback Form
+                                        </strong></a></li>
+                                <li><a href="trackingpage.html"><strong> Track Order </strong></a></li>
 
 
-         <!-- Contact Information Section -->
-         <div class="col-lg-4 col-md-6">
-             <div class="footer-item">
-                 <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
-                 <address class="contact-information text-dark">
-                     <ul>
-                         <li class="py-1"><i class="fas fa-map-marker-alt"></i>
-                             <a href="https://maps.app.goo.gl/xsiUC3c2nagspFnn7"> <strong>E-169, Lower Ground
-                                     Part
-                                     1,
-                                     Sector 63 G B Nagar,
-                                     Noida, Uttar Pradesh, India, 201301</strong></a>
-                         </li>
-                         <li class="py-1"><i class="fas fa-envelope"></i>
-                             <a href="mailto:operations@malukforever.com">
-                                 <strong>operations@malukforever.com</strong></a>,
+                            </ul>
+                        </div>
+                    </div>
 
-                         </li>
-                         <li class="py-1"><i class="fas fa-phone-alt"></i>
-                             <a href="tel:+918588801711"> <strong>+91 85888 01711</strong> </a>
-                         </li>
-                     </ul>
-                 </address>
-             </div>
-         </div>
-     </div>
- </div>
-</section>
+
+                    <!-- Contact Information Section -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
+                            <address class="contact-information text-dark">
+                                <ul>
+                                    <li class="py-1"><i class="fas fa-map-marker-alt"></i>
+                                        <a href="https://maps.app.goo.gl/xsiUC3c2nagspFnn7"> <strong>E-169, Lower Ground
+                                                Part
+                                                1,
+                                                Sector 63 G B Nagar,
+                                                Noida, Uttar Pradesh, India, 201301</strong></a>
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-envelope"></i>
+                                        <a href="mailto:operations@malukforever.com">
+                                            <strong>operations@malukforever.com</strong></a>,
+
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-phone-alt"></i>
+                                        <a href="tel:+918588801711"> <strong>+91 85888 01711</strong> </a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
