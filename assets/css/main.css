@@ -155,9 +155,7 @@ span {
   font-size: 1.2em;
   color: #333;
 }
-.collapse  .mx-auto{
-  margin-left: 175px !important;
-}
+
 
 .footer-item ul {
   padding: 0;
@@ -548,12 +546,10 @@ ul {
 .pagination a {
   color: #b09614;
 }
-.breadcrumb-banner {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-height: auto;
-padding: 125px 0px;
-  color: #fff;
-  text-align: center;
+.crumb {
+  background:  #f4f2e4;
+}
+.crumb img{
+  height: auto;
+  width: 100%;
 }
