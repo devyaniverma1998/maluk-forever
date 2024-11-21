@@ -39,7 +39,7 @@ a {
 
 /* Navbar background customization */
 .navbar {
-  background: linear-gradient(90deg, white,#f4f2e4, #b09614) !important;
+  background:#f4f2e4!important;
 }
 
 /* Toggler (hamburger icon) styling */
@@ -188,7 +188,7 @@ span {
 }
 
 .breadcrumb-banner {
-  background: linear-gradient(90deg, #ffffff, #f1efdd, #bea93e);
+  background: linear-gradient(90deg, #b09614, #f4f2e4, #fff );
   padding: 60px 20px;
   color: #fff;
   text-align: center;
@@ -521,4 +521,8 @@ ul {
 
 .blog-post-content ul li strong {
     color: #333;
+}
+.pagination a{
+  color: #b09614;
+
 }
