@@ -97,100 +97,67 @@
                         <li><a href="#before-after" class="tab-link" data-target="before-after">Before & After</a></li>
                     </ul>
 
-
+                    <!-- Customer Reviews -->
                     <div id="Customer-Reviews" class="tab-content">
                         <h3>Customer Reviews</h3>
-                        <ul class="image-grid four-column">
-                            <li><img src="assets/images/Review/Review-1.jpg" alt="Review 1"></li>
-                            <li><img src="assets/images/Review/Review-2.jpg" alt="Review 2"></li>
-                            <li><img src="assets/images/Review/Review-3.jpg" alt="Review 3"></li>
-                            <li><img src="assets/images/Review/Review-4.jpg" alt="Review 4"></li>
-                        </ul>
+                        <div class="image-container">
+                            <img src="assets/images/Review/Review-1.jpg" alt="Review 1">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/Review/Review-2.jpg" alt="Review 2">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/Review/Review-3.jpg" alt="Review 3">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/Review/Review-4.jpg" alt="Review 4">
+                        </div>
                     </div>
 
-
+                    <!-- Customer Love -->
                     <div id="Customer-love" class="tab-content">
                         <h3>Customer Love</h3>
-                        <ul class="image-grid third">
-                            <!-- Customer Love content here -->
-                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
-                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
-                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
-                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
-                        </ul>
+                        <div class="image-container">
+                            <img src="assets/images/banner/banner1.jpg" alt="Customer Love 1">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/banner/banner1.jpg" alt="Customer Love 2">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/banner/banner1.jpg" alt="Customer Love 3">
+                        </div>
                     </div>
 
+                    <!-- Before & After -->
                     <div id="before-after" class="tab-content">
-                        <h3>Before After</h3>
-                        <ul class="image-grid third">
-                            <!-- Before After content here -->
-                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
-                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
-                        </ul>
+                        <h3>Before & After</h3>
+                        <div class="image-container">
+                            <img src="assets/images/banner/banner1.jpg" alt="Before & After 1">
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/images/banner/banner1.jpg" alt="Before & After 2">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <style>
-            /* General styling for the image grid */
-            .fan-page-section .image-grid {
-                display: flex;
-                flex-wrap: wrap;
-                /* Ensures items wrap to the next row */
-                gap: 20px;
-                /* Adds consistent spacing between items */
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                justify-content: space-between;
-                /* Ensures even spacing */
+            /* General styling */
+            .fan-page-section .image-container {
+                width: 600px;
+                margin: 0 auto 20px;
+                /* Centres the container and adds spacing */
+                text-align: center;
+               
             }
 
-            /* Four-column layout */
-            .fan-page-section .image-grid.four-column li {
-                flex: 1 0 calc(25% - 20px);
-                /* 25% width minus the gap */
-                box-sizing: border-box;
-            }
-
-            /* Third layout (three-column layout) */
-            .fan-page-section .image-grid.third li {
-                flex: 1 0 calc(33.33% - 20px);
-                /* 33.33% width minus the gap */
-            }
-
-            /* General image styling */
-            .fan-page-section img {
+            .fan-page-section .image-container img {
                 max-width: 100%;
-                /* Ensures images fit within their container */
                 height: auto;
-                /* Maintains aspect ratio */
                 border-radius: 5px;
-                /* Optional rounded corners */
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                /* Subtle shadow for depth */
                 display: block;
-                /* Ensures no inline space around images */
-            }
-
-            /* Responsive Design: Adjusts grid on smaller screens */
-            @media screen and (max-width: 768px) {
-                .fan-page-section .image-grid.four-column li {
-                    flex: 1 0 calc(50% - 20px);
-                    /* Two-column layout */
-                }
-
-                .fan-page-section .image-grid.third li {
-                    flex: 1 0 calc(50% - 20px);
-                    /* Two-column layout for third grid */
-                }
-            }
-
-            @media screen and (max-width: 480px) {
-                .fan-page-section .image-grid li {
-                    flex: 1 0 100%;
-                    /* Single-column layout */
-                }
+                padding: 40px;
             }
 
             /* Page title and header */
@@ -224,10 +191,9 @@
                 text-decoration: underline;
             }
 
-            /* Tab content styling */
+            /* Tab content */
             .fan-page-section .tab-content {
                 margin-top: 30px;
-                /* Adds spacing above tab content */
                 display: none;
                 /* Initially hide all tabs */
             }
@@ -240,12 +206,6 @@
             /* Section padding */
             .section-padding {
                 padding: 21px 0;
-            }
-
-            @media screen and (min-width: 750px) {
-                .section-padding {
-                    padding: 28px 0;
-                }
             }
         </style>
         <script>
