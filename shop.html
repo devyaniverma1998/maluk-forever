@@ -401,6 +401,14 @@
                                 <input type="checkbox" class="category-filter-checkbox me-2" value="personal-care" />
                                 Personal Care
                             </label>
+                            <div class="ms-4">
+                                <label class="d-block">
+                                    <input type="checkbox" class="subcategory-filter-checkbox me-2" value="cold-wax"
+                                        data-parent="personal-care" />
+                                    Cold Wax
+                                </label>
+                            </div>
+
                             <label class="d-block">
                                 <input type="checkbox" class="category-filter-checkbox me-2" value="hair-accessories" />
                                 Hair Accessories
@@ -423,7 +431,7 @@
                             <div class="col-md-4 mb-4 product-list" data-category="skin-care"
                                 data-subcategory="sheet-mask" data-price="599">
                                 <div class="card h-100">
-                                    <img src="assets/images/products/Skin-Care.jpg" alt="Sheet Mask"
+                                    <img src="assets/images/products/skin/Face-sheet.jpg" alt="Sheet Mask"
                                         class="card-img-top img-fluid" />
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Sheet Mask</h5>
@@ -437,8 +445,8 @@
                                                     class="fas fa-shopping-cart icon"></i></a>
                                         </div>
                                         <div class="mt-auto">
-                                            <p class="text-muted mb-1"><del>₹799.99</del></p>
-                                            <p class="fw-bold">₹599.99</p>
+                                            <p class="text-muted mb-1"><del>₹999.99</del></p>
+                                            <p class="fw-bold">₹299.99</p>
                                         </div>
                                     </div>
                                 </div>
@@ -448,10 +456,10 @@
                             <div class="col-md-4 mb-4 product-list" data-category="skin-care"
                                 data-subcategory="bath-oil" data-price="899">
                                 <div class="card h-100">
-                                    <img src="assets/images/products/Skin-Care.jpg" alt="Bath Oil"
+                                    <img src="assets/images/products/skin/Shower-Oil.jpg" alt="Bath Oil"
                                         class="card-img-top img-fluid" />
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Bath Oil</h5>
+                                        <h5 class="card-title">Shower Oil</h5>
                                         <div class="noe"
                                             style="display: inline-flex; flex-direction:row-reverse; margin: -38px -16px;">
                                             <a href="productdetails.html" class="btn btn-view"><i
@@ -473,7 +481,7 @@
                             <div class="col-md-4 mb-4 product-list" data-category="skin-care"
                                 data-subcategory="sunscreen" data-price="799">
                                 <div class="card h-100">
-                                    <img src="assets/images/products/Skin-Care.jpg" alt="Sunscreen"
+                                    <img src="assets/images/products/skin/Sunscreen.jpg" alt="Sunscreen"
                                         class="card-img-top img-fluid" />
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Sunscreen</h5>
@@ -498,7 +506,7 @@
                             <div class="col-md-4 mb-4 product-list" data-category="skin-care" data-subcategory="serum"
                                 data-price="1200">
                                 <div class="card h-100">
-                                    <img src="assets/images/products/Skin-Care.jpg" alt="Serum"
+                                    <img src="assets/images/products/skin/Serum.jpg" alt="Serum"
                                         class="card-img-top img-fluid" />
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title">Serum</h5>
@@ -630,8 +638,7 @@
             });
 
         </script>
-        <section class="footer p-5"
-            style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
+        <section class="footer p-5" style="background: #f4f2e4; color: black;">
             <div class="container-fluid">
                 <div class="row g-5">
                     <!-- Logo and Payment Section -->
@@ -650,7 +657,8 @@
                                             <img src="assets/images/icons/pinterest.png" width="27px"
                                                 alt="not found"></a>
                                     </li>
-                                    <li><a href="https://www.linkedin.com/company/maluk-forever/?viewAsMember=true" target="_blank">
+                                    <li><a href="https://www.linkedin.com/company/maluk-forever/?viewAsMember=true"
+                                            target="_blank">
                                             <img src="assets/images/icons/linkedin.png" width="28px"
                                                 alt="not found"></a>
                                     </li>
@@ -672,7 +680,7 @@
                     </div>
 
                     <!-- Quick Links Section -->
-                     <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
                             <ul>
@@ -714,7 +722,7 @@
 
 
                     <!-- Contact Information Section -->
-                     <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
                             <address class="contact-information text-dark">
@@ -728,7 +736,7 @@
                                     </li>
                                     <li class="py-1"><i class="fas fa-envelope"></i>
                                         <a href="mailto:operations@malukforever.com">
-                                           <strong>operations@malukforever.com</strong></a>
+                                            <strong>operations@malukforever.com</strong></a>
 
                                     </li>
                                     <li class="py-1"><i class="fas fa-phone-alt"></i>

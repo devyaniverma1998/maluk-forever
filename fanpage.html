@@ -91,38 +91,35 @@
                 <div class="content">
                     <ul class="tabs">
                         <li><a href="#" class="tab-link" data-target="all">All</a></li>
-                        <li><a href="#" class="tab-link" data-target="Customer-Reviews">Customer Reviews</a></li>
-                        <li><a href="#" class="tab-link" data-target="Customer-love">Customer Love</a></li>
-                        <li><a href="#" class="tab-link" data-target="before-after">Before & After</a></li>
+                        <li><a href="#Customer-Reviews" class="tab-link" data-target="Customer-Reviews">Customer
+                                Reviews</a></li>
+                        <li><a href="#Customer-love" class="tab-link" data-target="Customer-love">Customer Love</a></li>
+                        <li><a href="#before-after" class="tab-link" data-target="before-after">Before & After</a></li>
                     </ul>
 
 
                     <!-- Content for each tab -->
                     <div id="Customer-Reviews" class="tab-content">
                         <h3>Customer Reviews</h3>
-                        <ul class="image-grid">
+                        <ul class="image-grid m-1">
                             <!-- Customer Reviews content here -->
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/3-review-4feb-20.jpg?v=1580800975"
-                                    alt="Face pack Review"></li>
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/4-review-4feb-20.jpg?v=1580800993"
-                                    alt="Oats scrub feedback"></li>
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/fan-story-1.jpg?v=1577349717"
-                                    alt="Lip balm feedback"></li>
+                            <li><img src="assets/images/Review/Review-1.jpg" alt="not found"></li>
+                            <li><img src="assets/images/Review/Review-2.jpg" alt="not found"></li>
+                            <li><img src="assets/images/Review/Review-3.jpg" alt="not found"></li>
+                            <li><img src="assets/images/Review/Review-4.jpg" alt="not found"></li>
+
                         </ul>
                     </div>
+                    
 
                     <div id="Customer-love" class="tab-content">
                         <h3>Customer Love</h3>
                         <ul class="image-grid third">
                             <!-- Customer Love content here -->
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-4.jpg?v=1577367344"
-                                    alt="Customer love oats cleanse"></li>
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-5.jpg?v=1577367344"
-                                    alt="Customer love charcoal soap"></li>
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-8.jpg?v=1577367344"
-                                    alt="Giveaway multani mitti facewash"></li>
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-9.jpg?v=1577367344"
-                                    alt="Giveaway lip balm"></li>
+                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
+                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
+                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
+                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
                         </ul>
                     </div>
 
@@ -130,10 +127,8 @@
                         <h3>Before After</h3>
                         <ul class="image-grid third">
                             <!-- Before After content here -->
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/before-after-2.jpg?v=1577349727"
-                                    alt="Before and after"></li>
-                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/before-after-3.jpg?v=1577349727"
-                                    alt="Customer before and after"></li>
+                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
+                            <li><img src="assets/images/banner/banner1.jpg" alt="not found"></li>
                         </ul>
                     </div>
                 </div>
@@ -182,36 +177,57 @@
 
         </script>
         <style>
+            /* General styling for the image grid */
+            .fan-page-section .image-grid {
+                display: grid;
+                gap: 20px;
+                /* Adjust the gap size as needed */
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                /* Adjust number of columns */
+            }
+
+            /* Styling for third class if necessary */
+            .fan-page-section .image-grid.third {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                /* Adjust the column size for third grid */
+            }
+
+            /* Optional: Add a gap between the entire tab sections as well */
+            .fan-page-section .tab-content {
+                margin-top: 30px;
+                /* Adds some space above each tab content */
+            }
+
             /* General Styles */
-            .container {
+            .fan-page-section .container {
                 width: 100%;
                 margin: 0 auto;
                 padding: 0 15px;
             }
 
-            .page-title {
+            .fan-page-section .page-title {
                 font-size: 2rem;
                 font-weight: bold;
             }
 
-            .tabs {
+            .fan-page-section .tabs {
                 list-style: none;
                 padding: 0;
                 margin: 20px 0;
             }
 
-            .tabs li {
+            .fan-page-section .tabs li {
                 display: inline-block;
                 margin-right: 15px;
             }
 
-            .tabs li a {
+            .fan-page-section .tabs li a {
                 text-decoration: none;
                 color: #333;
                 font-weight: bold;
             }
 
-            .tabs li a:hover {
+            .fan-page-section .tabs li a:hover {
                 text-decoration: underline;
             }
 
@@ -227,37 +243,37 @@
                 }
             }
 
-            h4 {
+            .fan-page-section h4 {
                 margin-top: 10px;
                 font-size: 1.2rem;
                 font-weight: bold;
             }
 
-            h3 {
+            .fan-page-section h3 {
                 margin-top: 20px;
                 font-size: 1.5rem;
             }
 
-            .image-wrapper {
+            .fan-page-section .image-wrapper {
                 text-align: left;
             }
 
-            .image-grid {
+            .fan-page-section .image-grid {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
 
-            .image-grid li {
+            .fan-page-section .image-grid li {
                 flex: 1 0 48%;
                 margin-bottom: 10px;
             }
 
-            .image-grid.third li {
+            .fan-page-section .image-grid.third li {
                 flex: 1 0 32%;
             }
 
-            img {
+            .fan-page-section img {
                 max-width: 100%;
                 height: auto;
                 display: block;
@@ -265,13 +281,12 @@
             }
 
             /* Initially show all tab contents */
-            .tab-content {
+            .fan-page-section .tab-content {
                 display: block;
             }
         </style>
 
-        <section class="footer p-5"
-            style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
+        <section class="footer p-5" style="background: #f4f2e4; color: black;">
             <div class="container-fluid">
                 <div class="row g-5">
                     <!-- Logo and Payment Section -->
