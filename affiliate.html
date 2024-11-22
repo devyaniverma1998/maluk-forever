@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MalukForever ||  Become an affiliate</title>
+    <title>MalukForever || Become an affiliate</title>
     <!-- Favicon and Apple Touch Icon -->
     <link href="assets/images/favicon/favicon.png" rel="icon" type="image/png">
     <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -270,9 +270,18 @@
                     <div class="form-group"> <label for="contact" class="form-label">Contact Number <span
                                 class="required">*</span></label> <input type="tel" id="contact" name="contact"
                             class="form-input" placeholder="Your contact number" required> </div>
-                    <!-- Date of Birth Field -->
-                    <div class="form-group"> <label for="dob" class="form-label">Date of Birth</label> <input
-                            type="date" id="dob" name="dob" max="2074-01-01" class="form-input" required> </div>
+                    <!-- Date of Birth Field (to calculate Age) -->
+                    <div class="form-group">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" max="2074-01-01" class="form-input" required
+                            onchange="calculateAge()">
+                    </div>
+
+                    <!-- Age Field (calculated automatically) -->
+                    <div class="form-group">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" id="age" name="age" class="form-input" readonly>
+                    </div>
                     <!-- Gender Radio Buttons -->
                     <div class="form-group"> <label class="form-label">Gender</label>
                         <div class="radio-group"> <label><input type="radio" name="gender" value="Male" required>
@@ -366,7 +375,25 @@
                             type="button" class="btn btn-clear">Clear form</button> </div>
                 </form>
             </div>
-            <section class="footer p-5"
+        </section>
+        <script>
+            function calculateAge() {
+                const dob = document.getElementById('dob').value;
+                if (dob) {
+                    const birthDate = new Date(dob);
+                    const currentDate = new Date();
+                    let age = currentDate.getFullYear() - birthDate.getFullYear();
+                    const m = currentDate.getMonth() - birthDate.getMonth();
+                    if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+                        age--; // If birthday hasn't occurred this year, subtract 1
+                    }
+                    document.getElementById('age').value = age; // Set the calculated age
+                }
+            }
+        </script>
+
+
+        <section class="footer p-5"
             style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
             <div class="container-fluid">
                 <div class="row g-5">
@@ -386,7 +413,8 @@
                                             <img src="assets/images/icons/pinterest.png" width="27px"
                                                 alt="not found"></a>
                                     </li>
-                                    <li><a href="https://www.linkedin.com/company/maluk-forever/?viewAsMember=true" target="_blank">
+                                    <li><a href="https://www.linkedin.com/company/maluk-forever/?viewAsMember=true"
+                                            target="_blank">
                                             <img src="assets/images/icons/linkedin.png" width="28px"
                                                 alt="not found"></a>
                                     </li>
@@ -408,7 +436,7 @@
                     </div>
 
                     <!-- Quick Links Section -->
-                     <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
                             <ul>
@@ -450,13 +478,14 @@
 
 
                     <!-- Contact Information Section -->
-                     <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
                             <address class="contact-information text-dark">
                                 <ul>
                                     <li class="py-1"><i class="fas fa-map-marker-alt"></i>
-                                        <a href="https://maps.app.goo.gl/xsiUC3c2nagspFnn7"> <strong>E-169, Lower Ground
+                                        <a href="https://maps.app.goo.gl/xsiUC3c2nagspFnn7"> <strong>E-169, Lower
+                                                Ground
                                                 Part
                                                 1,
                                                 Sector 63 G B Nagar,
@@ -464,7 +493,7 @@
                                     </li>
                                     <li class="py-1"><i class="fas fa-envelope"></i>
                                         <a href="mailto:operations@malukforever.com">
-                                           <strong>operations@malukforever.com</strong></a>
+                                            <strong>operations@malukforever.com</strong></a>
 
                                     </li>
                                     <li class="py-1"><i class="fas fa-phone-alt"></i>

@@ -9,6 +9,7 @@
     <link href="assets/images/favicon/favicon.png" rel="icon" type="image/png">
     <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -84,117 +85,303 @@
                 </div>
             </div>
         </nav>
-        <section class="footer p-5"
-        style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
-        <div class="container-fluid">
-            <div class="row g-5">
-                <!-- Logo and Payment Section -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-item text-start">
-                        <a href="index.html" class="navbar-brand text-start">
-                            <img src="assets/images/logo/maluk-logo.png" width="50%" alt="Maluk Forever Logo">
-                        </a>
-                        <p class="text-start"> <strong><em>Enhance Your Beauty</em></strong></p>
+        <section id="fan-page-section" class="fan-page-section">
+            <div class="container container--narrow section-padding">
+                <h1 class="main-title page-title">Fan Page</h1>
+                <div class="content">
+                    <ul class="tabs">
+                        <li><a href="#" class="tab-link" data-target="all">All</a></li>
+                        <li><a href="#" class="tab-link" data-target="Customer-Reviews">Customer Reviews</a></li>
+                        <li><a href="#" class="tab-link" data-target="Customer-love">Customer Love</a></li>
+                        <li><a href="#" class="tab-link" data-target="before-after">Before & After</a></li>
+                    </ul>
 
-                        <div class="follow ">
-                            <ul class="text-start ">
-                                <h4 class="text-start "><strong>Follow Us </strong></h4>
-                                <li>
-                                    <a href="https://pin.it/28GVwGnI3" target="_blank">
-                                        <img src="assets/images/icons/pinterest.png" width="27px"
-                                            alt="not found"></a>
-                                </li>
-                                <li><a href="https://www.linkedin.com/company/maluk-forever/?viewAsMember=true" target="_blank">
-                                        <img src="assets/images/icons/linkedin.png" width="28px"
-                                            alt="not found"></a>
-                                </li>
-                                <li><a href="https://www.youtube.com/@maluk.forever" target="_blank">
-                                        <img src="assets/images/icons/youtube.png" width="28px" alt="not found"></a>
-                                </li>
-                                <li><a href="https://x.com/malukforever" target="_blank">
-                                        <img src="assets/images/icons/twitter.png" width="28px" alt="not found"></a>
-                                </li>
-                                <li><a href="https://www.instagram.com/maluk.forever/?igsh=bDJtdW80aWVlYjFr#"
-                                        target="_blank">
-                                        <img src="assets/images/icons/insta.png" width="31px" alt="not found"></a>
-                                </li>
-                            </ul>
 
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Quick Links Section -->
-                 <div class="col-lg-3 col-md-6">
-                    <div class="footer-item">
-                        <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
-                        <ul>
-                            <li><a href="index.html"><strong>Home</strong></a></li>
-                            <li><a href="about.html"><strong>About Us</strong></a></li>
-                            <li><a href="blog.html"><strong>Blogs</strong></a></li>
-                            <li><a href="shop.html"><strong>Category</strong></a></li>
-                            <li><a href="gallery.html"><strong>Gallery</strong></a></li>
-                            <li><a href="contact.html"><strong>Contact Us</strong></a></li>
-                            <li><a href="faq.html"><strong> FAQ's</strong></a></li>
-
+                    <!-- Content for each tab -->
+                    <div id="Customer-Reviews" class="tab-content">
+                        <h3>Customer Reviews</h3>
+                        <ul class="image-grid">
+                            <!-- Customer Reviews content here -->
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/3-review-4feb-20.jpg?v=1580800975"
+                                    alt="Face pack Review"></li>
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/4-review-4feb-20.jpg?v=1580800993"
+                                    alt="Oats scrub feedback"></li>
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/fan-story-1.jpg?v=1577349717"
+                                    alt="Lip balm feedback"></li>
                         </ul>
                     </div>
-                </div>
 
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-item">
-                        <h4 class="text-dark mb-3"><strong>Useful Links</strong></h4>
-
-                        <ul>
-                            <li><a href="ourprivacy.html"><strong>Our Policy</strong></a>
-                            </li>
-                            <li><a href="termsandconditions.html"><strong>Terms And Conditions</strong></a>
-                            </li>
-                            <li><a href="wemake.html"><strong>How We Make</strong></a></li>
-                            <li><a href="fanpage.html"><strong>Fan Page</strong></a></li>
-                            <li><a href="media.html"><strong>Media</strong></a></li>
-                            <li><a href="affiliate.html"><strong> Become an affiliate
-                                    </strong></a></li>
-                            <li><a href="feedback.html"><strong> Feedback Form
-                                    </strong></a></li>
-                            <li><a href="trackingpage.html"><strong> Track Order </strong></a></li>
-
-
+                    <div id="Customer-love" class="tab-content">
+                        <h3>Customer Love</h3>
+                        <ul class="image-grid third">
+                            <!-- Customer Love content here -->
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-4.jpg?v=1577367344"
+                                    alt="Customer love oats cleanse"></li>
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-5.jpg?v=1577367344"
+                                    alt="Customer love charcoal soap"></li>
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-8.jpg?v=1577367344"
+                                    alt="Giveaway multani mitti facewash"></li>
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/customer-love-9.jpg?v=1577367344"
+                                    alt="Giveaway lip balm"></li>
                         </ul>
                     </div>
-                </div>
 
-
-                <!-- Contact Information Section -->
-                 <div class="col-lg-3 col-md-6">
-                    <div class="footer-item">
-                        <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
-                        <address class="contact-information text-dark">
-                            <ul>
-                                <li class="py-1"><i class="fas fa-map-marker-alt"></i>
-                                    <a href="https://maps.app.goo.gl/xsiUC3c2nagspFnn7"> <strong>E-169, Lower Ground
-                                            Part
-                                            1,
-                                            Sector 63 G B Nagar,
-                                            Noida, Uttar Pradesh, India, 201301</strong></a>
-                                </li>
-                                <li class="py-1"><i class="fas fa-envelope"></i>
-                                    <a href="mailto:operations@malukforever.com">
-                                       <strong>operations@malukforever.com</strong></a>
-
-                                </li>
-                                <li class="py-1"><i class="fas fa-phone-alt"></i>
-                                    <a href="tel:+918588801711"> <strong>+91 85888 01711</strong> </a>
-                                </li>
-                            </ul>
-                        </address>
+                    <div id="before-after" class="tab-content">
+                        <h3>Before After</h3>
+                        <ul class="image-grid third">
+                            <!-- Before After content here -->
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/before-after-2.jpg?v=1577349727"
+                                    alt="Before and after"></li>
+                            <li><img src="https://cdn.shopify.com/s/files/1/0280/6241/6930/files/before-after-3.jpg?v=1577349727"
+                                    alt="Customer before and after"></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all the tab links and content divs
+                const tabLinks = document.querySelectorAll('.tab-link');
+                const tabContents = document.querySelectorAll('.tab-content');
+
+                // Function to show all tabs
+                function showAllTabs() {
+                    tabContents.forEach(function (tab) {
+                        tab.style.display = 'block'; // Show all content sections
+                    });
+                }
+
+                // Function to filter content based on tab selection
+                function filterTab(targetId) {
+                    if (targetId === 'all') {
+                        showAllTabs(); // If "All" is selected, show all tabs
+                    } else {
+                        tabContents.forEach(function (tab) {
+                            if (tab.id === targetId) {
+                                tab.style.display = 'block'; // Show the selected tab
+                            } else {
+                                tab.style.display = 'none'; // Hide the other tabs
+                            }
+                        });
+                    }
+                }
+
+                // Event listener for each tab link
+                tabLinks.forEach(function (link) {
+                    link.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        const targetId = link.getAttribute('data-target'); // Get target content ID
+                        filterTab(targetId);
+                    });
+                });
+
+                // Initially show all tabs by default
+                showAllTabs();
+            });
+
+        </script>
+        <style>
+            /* General Styles */
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+
+            .page-title {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .tabs {
+                list-style: none;
+                padding: 0;
+                margin: 20px 0;
+            }
+
+            .tabs li {
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+            .tabs li a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+            .tabs li a:hover {
+                text-decoration: underline;
+            }
+
+            .section-padding {
+                padding-top: 21px;
+                padding-bottom: 21px;
+            }
+
+            @media screen and (min-width: 750px) {
+                .section-padding {
+                    padding-top: 28px;
+                    padding-bottom: 28px;
+                }
+            }
+
+            h4 {
+                margin-top: 10px;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            h3 {
+                margin-top: 20px;
+                font-size: 1.5rem;
+            }
+
+            .image-wrapper {
+                text-align: left;
+            }
+
+            .image-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .image-grid li {
+                flex: 1 0 48%;
+                margin-bottom: 10px;
+            }
+
+            .image-grid.third li {
+                flex: 1 0 32%;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            /* Initially show all tab contents */
+            .tab-content {
+                display: block;
+            }
+        </style>
+
+        <section class="footer p-5"
+            style="background: linear-gradient(#f4f2e3, #fdf7e0, #f3edd6, #faf7e0, #faf6da); color: black;">
+            <div class="container-fluid">
+                <div class="row g-5">
+                    <!-- Logo and Payment Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item text-start">
+                            <a href="index.html" class="navbar-brand text-start">
+                                <img src="assets/images/logo/maluk-logo.png" width="50%" alt="Maluk Forever Logo">
+                            </a>
+                            <p class="text-start"> <strong><em>Enhance Your Beauty</em></strong></p>
+
+                            <div class="follow ">
+                                <ul class="text-start ">
+                                    <h4 class="text-start "><strong>Follow Us </strong></h4>
+                                    <li>
+                                        <a href="https://pin.it/28GVwGnI3" target="_blank">
+                                            <img src="assets/images/icons/pinterest.png" width="27px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/maluk-forever/?viewAsMember=true"
+                                            target="_blank">
+                                            <img src="assets/images/icons/linkedin.png" width="28px"
+                                                alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/@maluk.forever" target="_blank">
+                                            <img src="assets/images/icons/youtube.png" width="28px" alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://x.com/malukforever" target="_blank">
+                                            <img src="assets/images/icons/twitter.png" width="28px" alt="not found"></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/maluk.forever/?igsh=bDJtdW80aWVlYjFr#"
+                                            target="_blank">
+                                            <img src="assets/images/icons/insta.png" width="31px" alt="not found"></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Quick Links</strong></h4>
+                            <ul>
+                                <li><a href="index.html"><strong>Home</strong></a></li>
+                                <li><a href="about.html"><strong>About Us</strong></a></li>
+                                <li><a href="blog.html"><strong>Blogs</strong></a></li>
+                                <li><a href="shop.html"><strong>Category</strong></a></li>
+                                <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                                <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+                                <li><a href="faq.html"><strong> FAQ's</strong></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Useful Links</strong></h4>
+
+                            <ul>
+                                <li><a href="ourprivacy.html"><strong>Our Policy</strong></a>
+                                </li>
+                                <li><a href="termsandconditions.html"><strong>Terms And Conditions</strong></a>
+                                </li>
+                                <li><a href="wemake.html"><strong>How We Make</strong></a></li>
+                                <li><a href="fanpage.html"><strong>Fan Page</strong></a></li>
+                                <li><a href="media.html"><strong>Media</strong></a></li>
+                                <li><a href="affiliate.html"><strong> Become an affiliate
+                                        </strong></a></li>
+                                <li><a href="feedback.html"><strong> Feedback Form
+                                        </strong></a></li>
+                                <li><a href="trackingpage.html"><strong> Track Order </strong></a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Contact Information Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-dark mb-3"><strong>Contact Us</strong></h4>
+                            <address class="contact-information text-dark">
+                                <ul>
+                                    <li class="py-1"><i class="fas fa-map-marker-alt"></i>
+                                        <a href="https://maps.app.goo.gl/xsiUC3c2nagspFnn7"> <strong>E-169, Lower Ground
+                                                Part
+                                                1,
+                                                Sector 63 G B Nagar,
+                                                Noida, Uttar Pradesh, India, 201301</strong></a>
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-envelope"></i>
+                                        <a href="mailto:operations@malukforever.com">
+                                            <strong>operations@malukforever.com</strong></a>
+
+                                    </li>
+                                    <li class="py-1"><i class="fas fa-phone-alt"></i>
+                                        <a href="tel:+918588801711"> <strong>+91 85888 01711</strong> </a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
