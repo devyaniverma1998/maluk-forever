@@ -467,7 +467,7 @@ img.img-fluid {
   background-color: #f0f0f0;
 }
 
-.blog-post-content {
+.glowguide-post-content {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
@@ -477,46 +477,46 @@ img.img-fluid {
   font-family: Arial, sans-serif;
 }
 
-.blog-post-image {
+.glowguide-post-image {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-.blog-post-title {
+.glowguide-post-title {
   color: #b09614;
   margin-bottom: 15px;
 }
 
-.blog-post-content.meta {
+.glowguide-post-content.meta {
   font-size: 0.9rem;
   color: #777;
   margin-bottom: 20px;
 }
 
-.blog-post-content .meta span {
+.glowguide-post-content .meta span {
   margin-right: 10px;
 }
 
-.blog-post-content h4 {
+.glowguide-post-content h4 {
   color: #b09614;
   margin-top: 20px;
 }
 
-.blog-post-content p,
+.glowguide-post-content p,
 ul {
   color: #555;
 }
 
-.blog-post-content ul {
+.glowguide-post-content ul {
   margin-left: 20px;
 }
 
-.blog-post-content ul li {
+.glowguide-post-content ul li {
   margin-bottom: 10px;
 }
 
-.blog-post-content ul li strong {
+.glowguide-post-content ul li strong {
   color: #333;
 }
 .pagination a {
